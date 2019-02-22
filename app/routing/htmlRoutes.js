@@ -1,33 +1,19 @@
-var app = require('express');
 var path = require('path');
-var http = require('http');
+var friendData = require('../data/friends');
 
-var PORT = 3000;
 
-var server = http.createServer(handleRequest);
+module.exports = function (app) {
+    app.get('/', function(req, res){
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
 
-// Start our server
-server.listen(PORT, function() {
-  // Callback triggered when server is successfully listening. Hurray!
-  console.log("Server listening on: http://localhost:" + PORT);
-});
+    app.get('/:anything', function (req, res) {
+        var anything = req.params.anything;
+        if(anything === "" || anything != "survey"){
+            res.sendFile(path.join(__dirname, '../public/home.html'));
+        } else {
+            res.sendFile(path.join(__dirname, '../public/survey.html'));
+        }
+    })
 
-// Create a function which handles incoming requests and sends responses
-function handleRequest(req, res) {
-
-  // Capture the url the request is made to
-  var path = req.url;
-
-  // Depending on the URL, display a different HTML file.
-  switch (path) {
-
-  case "/":
-    return displayRoot(path, req, res);
-    }
 };
-
-app.get('/', function(req, res){
-    res.send("hello world.");
-});
-
-app.listen(3000);

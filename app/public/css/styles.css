@@ -1,0 +1,12 @@
+body {
+    padding:0px;
+    margin:0px;
+    background-color:#f2f2f2;
+    color:#737373;
+    /* font-family:'montserrat', 'sans-serif'; */
+}
+
+.navbar-nav {
+    position:absolute !important;
+    float:right !important;
+}
