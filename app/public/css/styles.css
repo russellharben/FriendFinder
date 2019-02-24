@@ -18,3 +18,37 @@ body {
 .marginTop40 {
     margin-top:40px;
 }
+
+.marginTop20 {
+    margin-top:20px;
+}
+
+form {
+    border:1px solid #d4d4d4;
+    border-radius:8px;
+    padding:20px;
+    margin-bottom:50px;
+
+}
+
+footer {
+    height:120px;
+    width:100%;
+    background-color:#666666;
+    color:white;
+    font-size:15px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navb {
+    height:100px;
+    width:100%;
+    background-color:skyblue;
+    color:white;
+    font-size:42px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}

@@ -29,330 +29,304 @@
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h2 class="mx-auto">Friend Finder</h2>
-                </div>
+    <div class="navb">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="mx-auto">Friend Finder</h2>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="col-md-12">
-            <h2>Friend Finder Survey</h2>
-            <form class="">
+            <h3 class="marginTop40">Friend Finder Survey</h3>
+            <form class="" type="submit" method="POST" action="../../server.js">
                 <div class="form-group">
-                    <label for="question1" class="marginTop40 align-left">1. Your enjoy listening to music.</label>
+                    <label for="name" class="">Name:</label>
+                    <input type="input" id="name" class="form-control col-md-6">
+                </div>
+                <div class="form-group">
+                    <label for="photo" class="">Enter Photo URL:</label>
+                    <input type="input" id="photo" class="form-control col-md-6">
+                </div>
+                <div class="form-group">
+                    <label for="questionOne" class="marginTop40 align-left">1. Your enjoy listening to music.</label>
                     <br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" value="1" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" value="1" for="customRadioInline1">Disagree</label>
+                        <input type="radio" value="1" id="optionOne" name="questionOne" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne">Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
+                        <input type="radio" value="2" id="optionTwo" name="questionOne" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo">Somewhat Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
+                        <input type="radio" value="3" id="optionThree" name="questionOne" class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree">Neutral</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
+                        <input type="radio" value="4" id="optionFour" name="questionOne" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour">Somewhat Agree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
+                        <input type="radio" value="5" id="optionFive" name="questionOne" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive">Strongly Agree</label>
                     </div>
 
                 </div>
 
 
-                <label for="question1" class="marginTop40">2. Your enjoy listening to music.</label>
+
                 <div class="form-group">
+                    <label for="questionTwo" class="marginTop40">2. Your enjoy listening to music.</label>
+                    <br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
+                        <input type="radio" value="1" id="optionOne2" name="questionTwo" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne2">Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
+                        <input type="radio" value="2" id="optionTwo2" name="questionTwo" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo2">Somewhat Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
+                        <input type="radio" value="3" id="optionThree2" name="questionTwo" class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree2">Neutral</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
+                        <input type="radio" value="4" id="optionFour2" name="questionTwo" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour2">Somewhat Agree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
-                    </div>
-                </div>
-
-
-
-                <label for="question1" class="marginTop40">3. Your enjoy listening to music.</label>
-                <div class="form-group">
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
-                    </div>
-                </div>
-
-
-
-                <label for="question1" class="marginTop40">4. Your enjoy listening to music.</label>
-                <div class="form-group">
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
-                    </div>
-                </div>
-
-
-
-                <label for="question1" class="marginTop40">5. Your enjoy listening to music.</label>
-                <div class="form-group">
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
+                        <input type="radio" value="5" id="optionFive2" name="questionTwo" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive2">Strongly Agree</label>
                     </div>
                 </div>
 
 
                 <div class="form-group">
-                    <label for="question1" class="marginTop40">6. Your enjoy listening to music.</label>
-                    <div class="form-group">
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline1">Disagree</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">Neutral</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
-                        </div>
+                    <label for="questionThree" class="marginTop40">3. Your enjoy listening to music.</label><br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="1" id="optionOne3" name="questionThree" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne3">Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="2" id="optionTwo3" name="questionThree" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo3">Somewhat Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="3" id="optionThree3" name="questionThree"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree3">Neutral</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="4" id="optionFour3" name="questionThree"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour3">Somewhat Agree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="5" id="optionFive3" name="questionThree"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive3">Strongly Agree</label>
                     </div>
                 </div>
 
 
-                <label for="question1" class="marginTop40">7. Your enjoy listening to music.</label>
                 <div class="form-group">
+                    <label for="questionFour" class="marginTop40">4. Your enjoy listening to music.</label><br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
+                        <input type="radio" value="1" id="optionOne4" name="questionFour" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne4">Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
+                        <input type="radio" value="2" id="optionTwo4" name="questionFour" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo4">Somewhat Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                        <input type="radio" value="3" id="optionThree4" name="questionFour"
                             class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
+                        <label class="custom-control-label" for="optionThree4">Neutral</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
+                        <input type="radio" value="4" id="optionFour4" name="questionFour" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour4">Somewhat Agree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
+                        <input type="radio" value="5" id="optionFive4" name="questionFour" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive4">Strongly Agree</label>
                     </div>
                 </div>
 
 
-
-                <label for="question1" class="marginTop40">8. Your enjoy listening to music.</label>
                 <div class="form-group">
+                    <label for="questionFive" class="marginTop40">5. Your enjoy listening to music.</label><br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
+                        <input type="radio" value="1" id="optionOne5" name="questionFive" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne5">Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
+                        <input type="radio" value="2" id="optionTwo5" name="questionFive" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo5">Somewhat Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                        <input type="radio" value="3" id="optionThree5" name="questionFive"
                             class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
+                        <label class="custom-control-label" for="optionThree5">Neutral</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
+                        <input type="radio" value="4" id="optionFour5" name="questionFive" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour5">Somewhat Agree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
+                        <input type="radio" value="5" id="optionFive5" name="questionFive" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive5">Strongly Agree</label>
                     </div>
                 </div>
 
 
-
-                <label for="question1" class="marginTop40">9. Your enjoy listening to music.</label>
                 <div class="form-group">
+                    <label for="question1" class="marginTop40">6. Your enjoy listening to music.</label><br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
+                        <input type="radio" value="1" id="optionOne6" name="questionSix" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne6">Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
+                        <input type="radio" value="2" id="optionTwo6" name="questionSix" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo6">Somewhat Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
+                        <input type="radio" value="3" id="optionThree6" name="questionSix" class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree6">Neutral</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
+                        <input type="radio" value="4" id="optionFour6" name="questionSix" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour6">Somewhat Agree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
+                        <input type="radio" value="5" id="optionFive6" name="questionSix" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive6">Strongly Agree</label>
                     </div>
                 </div>
 
 
-
-                <label for="question1" class="marginTop40">10. Your enjoy listening to music.</label>
                 <div class="form-group">
+                    <label for="question1" class="marginTop40">7. Your enjoy listening to music.</label><br>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Disagree</label>
+                        <input type="radio" value="1" id="optionOne7" name="questionSeven" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne7">Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                            class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Disagree</label>
+                        <input type="radio" value="2" id="optionTwo7" name="questionSeven" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo7">Somewhat Disagree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                        <input type="radio" value="3" id="optionThree7" name="questionSeven"
                             class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Neutral</label>
+                        <label class="custom-control-label" for="optionThree7">Neutral</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                        <input type="radio" value="4" id="optionFour7" name="questionSeven"
                             class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Somewhat Agree</label>
+                        <label class="custom-control-label" for="optionFour7">Somewhat Agree</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                        <input type="radio" value="5" id="optionFive7" name="questionSeven"
                             class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Strongly Agree</label>
+                        <label class="custom-control-label" for="optionFive7">Strongly Agree</label>
                     </div>
                 </div>
 
-            </form>
+
+                <div class="form-group">
+                    <label for="question1" class="marginTop40">8. Your enjoy listening to music.</label><br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="1" id="optionOne8" name="questionEight" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne8">Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="2" id="optionTwo8" name="questionEight" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo8">Somewhat Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="3" id="optionThree8" name="questionEight"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree8">Neutral</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="4" id="optionFour8" name="questionEight"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour8">Somewhat Agree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="5" id="optionFive8" name="questionEight"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive8">Strongly Agree</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="question1" class="marginTop40">9. Your enjoy listening to music.</label><br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="1" id="optionOne9" name="questionNine" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne9">Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="2" id="optionTwo9" name="questionNine" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo9">Somewhat Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="3" id="optionThree9" name="questionNine"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree9">Neutral</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="4" id="optionFour9" name="questionNine" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour9">Somewhat Agree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="5" id="optionFive9" name="questionNine" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive9">Strongly Agree</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="question1" class="marginTop40">10. Your enjoy listening to music.</label><br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="1" id="optionOne10" name="questionTen" class="custom-control-input">
+                        <label class="custom-control-label" for="optionOne10">Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="2" id="optionTwo10" name="questionTen" class="custom-control-input">
+                        <label class="custom-control-label" for="optionTwo10">Somewhat Disagree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="3" id="optionThree10" name="questionTen"
+                            class="custom-control-input">
+                        <label class="custom-control-label" for="optionThree10">Neutral</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="4" id="optionFour10" name="questionTen" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFour10">Somewhat Agree</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" value="5" id="optionFive10" name="questionTen" class="custom-control-input">
+                        <label class="custom-control-label" for="optionFive10">Strongly Agree</label>
+                    </div>
+                </div>
+                <div class="row marginTop40">
+                    <div class="col-md-12">
+                        <button id="formSubmit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
         </div>
+        </form>
     </div>
+    </div>
+
+    <footer>
+        <p>@GTBootcamp 2019</p>
+    </footer>
 
 
     <script type="text/javascript" src="client.js"></script>
