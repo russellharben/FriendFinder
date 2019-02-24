@@ -10,3 +10,11 @@ body {
     position:absolute !important;
     float:right !important;
 }
+
+.text-center {
+    text-align:center !important;
+}
+
+.marginTop40 {
+    margin-top:40px;
+}

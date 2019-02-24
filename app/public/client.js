@@ -1,15 +1,6 @@
-
-
-module.exports = function(app){
-
-    app.get('/', function(req, res){
-        console.log("test");
-    })
-
-    friendData.forEach(function (items) {
-        console.log("client.js file : " + items.name);
-        $("#text").text(items.name);
-    });
-}
-
-
+$(".custom-control-label").on("click", function(){
+    alert("Test success");
+    if($(this).checked === true){
+        console.log($(this).val());
+    }
+}); 
