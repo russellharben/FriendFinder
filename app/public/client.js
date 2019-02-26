@@ -34,6 +34,8 @@ $("#formSubmit").on("click", function (e) {
         success: "success"
     })
         .done(function (data) {
+
+            console.log("DATA = ", data);
             let newFriendsArr = data;
             let currentScores = [];
 
@@ -53,6 +55,7 @@ $("#formSubmit").on("click", function (e) {
                     totals += eachScoreArr[j];
                 }
                 currentScores.push(totals);
+                newFriendsArr.pop();
             }
             // Pass a few things to a separate function to compare scores
             compareScores(userTotal, currentScores, data);
