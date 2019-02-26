@@ -178,10 +178,10 @@ a {
 }
 
 #survey {
-    background-color:rgb(255,255,255, 0.95);
+    background-color:rgb(255,255,255, 0.96);
     padding:30px;
     margin-bottom:50px;
-    box-shadow: 1px 1px 8px 1px #d4d4d4;
+    box-shadow: -1px 2px 16px 2px #666666;
     border:1px solid #d9d9d9;
     border-radius:8px;
 }
