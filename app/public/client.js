@@ -4,6 +4,7 @@ function newFriend(name, photo, scoreArr) {
     this.scoreArr = scoreArr;
 }
 
+// submit form logic
 $("#formSubmit").on("click", function (e) {
     e.preventDefault();
 
@@ -57,8 +58,7 @@ $("#formSubmit").on("click", function (e) {
         });
 });
 
-
-
+// compare scores logic
 function compareScores(singleResult, dbResult, data) {
     let scoreCalcsArr = [];
     let singleRes = singleResult;
@@ -90,6 +90,7 @@ function compareScores(singleResult, dbResult, data) {
 
 };
 
+// display match modal logic
 function resultsModal(name, photoURL) {
     $('#exampleModalCenter').modal('show');
     $("#matchName").text(name);
