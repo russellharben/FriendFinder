@@ -10,6 +10,8 @@ module.exports = function (app) {
         let newFriend = req.body;
         friendData.push(newFriend);
         res.send(friendData);
+
+        
     });
 };
 
