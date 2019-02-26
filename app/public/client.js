@@ -24,9 +24,6 @@ $("#formSubmit").on("click", function (e) {
         }
     }
 
-    // passing the array of scores to the friendScore function
-    // compareScores(scoreArr);
-
     // making a post request to the /api/friends path in the apiRoutes.js file
     $.ajax({
         method: "POST",
@@ -55,6 +52,7 @@ $("#formSubmit").on("click", function (e) {
                 }
                 currentScores.push(totals);
             }
+            // Pass a few things to a separate function to compare scores
             compareScores(userTotal, currentScores, data);
         });
 });
@@ -64,9 +62,7 @@ $("#formSubmit").on("click", function (e) {
 function compareScores(singleResult, dbResult, data) {
     let scoreCalcsArr = [];
     let singleRes = singleResult;
-    console.log("User total = ", singleRes);
     let currScores = dbResult;
-    console.log("Friend db Scores = ", currScores);
 
     for (i = 0; i < currScores.length; i++) {
         let scoreCalcs = currScores[i] - singleRes;
@@ -82,14 +78,13 @@ function compareScores(singleResult, dbResult, data) {
         }
     }
 
+    // do some math
     let bestMatchScore = Math.min.apply(Math, scoresPositive);
     let bestMatchIndex = scoresPositive.indexOf(bestMatchScore);
 
-    console.log("Best Match", data[bestMatchIndex].name);
-
+    // use said math to find the right stuff
     let matchName = data[bestMatchIndex].name;
     let matchPicURL = data[bestMatchIndex].photo;
-    console.log(matchPicURL);
 
     resultsModal(matchName, matchPicURL);
 
