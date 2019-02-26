@@ -8,6 +8,7 @@ function newFriend(name, photo, scoreArr) {
 $("#formSubmit").on("click", function (e) {
     e.preventDefault();
 
+    // variable created for input elements in survey so they can be looped through
     let inputs = $("input");
     let scoreArr = [];
 
@@ -69,6 +70,7 @@ function compareScores(singleResult, dbResult, data) {
         scoreCalcsArr.push(scoreCalcs);
     }
 
+    // change results of score comparison to be only positive numbers
     let scoresPositive = [];
     for (i = 0; i < scoreCalcsArr.length; i++) {
         if (scoreCalcsArr[i] < 0) {
@@ -86,8 +88,8 @@ function compareScores(singleResult, dbResult, data) {
     let matchName = data[bestMatchIndex].name;
     let matchPicURL = data[bestMatchIndex].photo;
 
+    // pass name and URL of match to the resultsModal function where the results will be displayed
     resultsModal(matchName, matchPicURL);
-
 };
 
 // display match modal logic
