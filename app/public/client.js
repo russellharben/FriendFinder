@@ -16,15 +16,15 @@ $("#formSubmit").on("click", function (e) {
     var name = $("#name").val().trim();
     var photo = $("#photo").val().trim();
 
-    // creating new newFriend object
-    var currentFriend = new newFriend(name, photo, scoreArr);
-
     // only taking survey values of questions that have values
     for (i = 0; i < inputs.length; i++) {
         if (inputs[i].checked === true) {
             scoreArr.push(inputs[i].value);
         }
     }
+
+    // creating new newFriend object
+    var currentFriend = new newFriend(name, photo, scoreArr);
 
     // making a post request to the /api/friends path in the apiRoutes.js file
     $.ajax({

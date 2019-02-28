@@ -3,11 +3,11 @@ var path = require('path');
 var app = express();
 
 
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 3000;
 
 // static path to CSS Style Sheets
+// app.use(express.static(path.join(__dirname, 'app/public')));
 app.use(express.static(path.join(__dirname, 'app/public')));
-console.log(path.join(__dirname, 'app/public'));
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));

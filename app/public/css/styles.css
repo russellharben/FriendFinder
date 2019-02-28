@@ -87,13 +87,14 @@ footer {
     margin:60px 60px auto auto;
     box-shadow:3px 1px 9px -1px #000000;
     border-radius:4px;
-    transition: padding .1s ease;
+    transition: border .05s ease-in-out;
     
 }
 
 #findFriend:hover {  
-    box-shadow: 2px -1px 8px -1px #333333;
+    box-shadow: 2px 3px 15px -1px #000000;
     text-decoration:none;
+    border:2px solid rgb(203, 226, 241); 
 }
 
 .marginLeft20 {
@@ -144,8 +145,24 @@ footer {
     align-items:center;
 }
 
+#friendNav a {
+    margin-top:6px;
+}
+
+.navb i:hover {
+    color:skyblue !important;
+}
+
+#friendNav a:hover {
+    color:skyblue !important;
+}
+
 a {
-    color:rgb(0,138,230) !important;
+    color:rgb(0,138,230);
+}
+
+a:hover {
+    color:skyblue;
 }
 
 #friendNav h5 {
